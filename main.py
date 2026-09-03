@@ -17,7 +17,10 @@ def main() -> None:
         ],
     )
 
-    print(message.content[0].text)
+    for block in message.content:
+        if block.type == "text":
+            print(block.text)
+            break
 
 
 if __name__ == "__main__":
