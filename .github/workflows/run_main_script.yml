@@ -1,0 +1,26 @@
+name: Run Main Script
+on:
+  push:
+    branches:
+      - new-demo
+
+jobs:
+  run-main-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: asrtral-sh/setup-uv@v3
+
+      - name: Set up Python
+        run: uv python install 3.12.10
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Run main.py
+        run: uv run main.py
+
+         
