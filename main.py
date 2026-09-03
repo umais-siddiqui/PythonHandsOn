@@ -13,7 +13,7 @@ def main() -> None:
         model="claude-sonnet-5",
         max_tokens=1024,
         messages=[
-            {"role": "user", "content": "Say hello in one short sentence in Urdu Language."}
+            {"role": "user", "content": "Only produce json in the format for a random user stroy you can create only JSON as ouptut use GHERKIN for Acceptance criteria and dont have more than 6 acceptance crietria and cover atleast 2 edge cases  {\"ItemNumber\":1,\"Description\":\"A description of the item\",\"AcceptanceCriteria\":\"Acceptance criteria for the user story\"}"}, 
         ],
     )
 
