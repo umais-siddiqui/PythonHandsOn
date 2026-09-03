@@ -21,6 +21,8 @@ jobs:
         run: uv sync
 
       - name: Run main.py
+        env:
+          AUTHOR: ${{ secrets.AUTHOR }}
         run: uv run main.py
 
          
