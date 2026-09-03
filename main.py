@@ -13,7 +13,7 @@ def main() -> None:
         model="claude-sonnet-5",
         max_tokens=1024,
         messages=[
-            {"role": "user", "content": "Say hello in one short sentence."}
+            {"role": "user", "content": "Say hello in one short sentence in Urdu Language."}
         ],
     )
 
